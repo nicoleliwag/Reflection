@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reflection on Data Privacy and Awareness</title>
+    <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css">
+    <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('background.jpg'); 
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+        .content {
+            margin: 50px auto;
+            width: 80%;
+            background-color: rgba(255, 255, 255, 0.9); 
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 15px rgba(0,0,0,0.3);
+        }
+        h1 {
+            color: #1565c0;
+            text-align: center;
+            font-weight: bold;
+        }
+        h2, h3 {
+            color: #1565c0;
+            font-weight: bold;
+        }
+        p {
+            color: #333;
+            opacity: 0;  
+            transform: translateY(20px); 
+            transition: opacity 0.5s ease, transform 0.5s ease; 
+        }
+        .fade-in {
+            opacity: 1;  
+            transform: translateY(0); 
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <h2>Name: Nicole Anne G. Liwag</h2>
+        <h2>Subject: Fundamentals of Programming - Lab</h2>
+        <h2>Section: 9405</h2>
+        <h1>Reflection</h1>
+
+        <p id="para1">The campaign on Data Privacy and Awareness gave me a much clearer understanding of how data privacy laws work and how they protect us. What really stood out to me were the discussions on cybercrime, especially the <strong>Rule on Cybercrime Warrants</strong> and why people become victims of cybercrime.</p>
+
+        <h3>Rule on Cybercrime Warrants</h3>
+        <p id="para2">One key point was the Rule on Cybercrime Warrants, which is essentially the legal process authorities follow to investigate cybercrimes. When a crime happens online, law enforcement can't just invade someone's privacy or access their data without permission. They need a warrant. The seminar explained how authorities, like the police or the National Bureau of Investigation (NBI), need to file an application to a special cybercrime court to get a warrant. This is important because it protects both the victims and the suspects, ensuring no one's privacy is violated without good reason.</p>
+
+        <h3>Where to File for a Warrant</h3>
+        <p id="para3">What I found helpful was learning exactly where to go to file for a warrant. Law enforcement agencies can submit their application to designated courts that handle cybercrime cases. The process involves giving evidence to show why the warrant is necessary, and only then can investigators access things like personal messages, emails, or online accounts. This gives the process transparency, preventing abuse of power while still allowing authorities to track down cybercriminals.</p>
+
+        <h3>Why We Become Victims of Cybercrime</h3>
+        <p id="para4">Another major part of the campaign focused on understanding why we become victims of cybercrime. Often, it's because we unknowingly expose ourselves to risks. For instance, we might share too much personal information online or click on unsafe links in emails or messages that lead to phishing attacks. Cybercriminals rely on these vulnerabilities—things like weak passwords, public Wi-Fi networks, or not updating software regularly. Many of us also underestimate the importance of privacy settings on social media, making it easier for cybercriminals to gather personal details that they can use to scam us or even steal our identities.</p>
+
+        <h3>Understanding Cybercriminals</h3>
+        <p id="para5">The seminar also covered the mindset of cybercriminals. They are skilled at exploiting both technological weaknesses and human behaviors. Sometimes, these attackers are motivated by financial gain, but other times, they just want to disrupt systems or gain unauthorized access for personal satisfaction. The speakers explained that many cybercriminals study their targets beforehand, looking for signs of vulnerability. This could be anything from someone sharing their travel plans online (which can alert criminals that your house is empty) to companies that don't encrypt sensitive data. They work in subtle ways, often creating trust with their victims before launching their attacks.</p>
+
+        <p id="para6">What I realized is that this information will be incredibly helpful, especially if I ever find myself in a situation where someone hacks into my accounts or steals my personal data. I now know what steps I need to take if something like this happens. I am aware that the first thing to do is report the incident to the proper authorities and, if necessary, the police can apply for a cybercrime warrant to investigate the hacker. This process makes me feel more secure, knowing that there are legal measures in place to handle these situations.</p>
+
+        <h3>Conclusion</h3>
+        <p id="para7">In conclusion, the Data Privacy Awareness campaign made me realize how essential it is to stay aware and be proactive when it comes to data privacy and cybersecurity. Simple actions like being mindful of the information we share online, using strong passwords, and reporting suspicious activity to authorities can go a long way in protecting ourselves. We also need to understand the tactics of cybercriminals so we can avoid falling into their traps. The Rule on Cybercrime Warrants ensures there's a legal process for addressing these issues, which helps maintain a balance between privacy and law enforcement efforts. This knowledge gave me a sense of empowerment, knowing that if I ever face a cybercrime incident, I'll be able to respond effectively and seek the help I need from the proper authorities.</p>
+    </div>
+
+    <py-script>
+        # Animate the paragraphs as the page loads
+        from js import document
+        import time
+
+        # List of paragraphs to fade in
+        paragraphs = [
+            document.getElementById("para1"),
+            document.getElementById("para2"),
+            document.getElementById("para3"),
+            document.getElementById("para4"),
+            document.getElementById("para5"),
+            document.getElementById("para6"),
+            document.getElementById("para7"),
+        ]
+
+        # Fade in effect
+        for para in paragraphs:
+            para.classList.add('fade-in')
+            time.sleep(0.5)  # Delay for animation effect
+    </py-script>
+</body>
+</html>
